@@ -1,0 +1,11 @@
+body {
+	background: #0C0F15;
+}
+
+.section-main {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 395px;
+}
