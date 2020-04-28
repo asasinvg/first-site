@@ -2,10 +2,95 @@ body {
 	background: #0C0F15;
 }
 
+.container {
+	width: 1300px;
+	margin: 0 auto;
+}
+
 .section-main {
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
 	align-items: center;
 	padding-top: 395px;
+}
+
+.section-main__image-device {
+	width: 75vw;
+	max-width: 1200px;
+}
+
+.section-about {
+	margin-bottom: 170px;
+}
+
+.section-about__container {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.section-about__days {
+	text-align: right;
+}
+
+.section-about__days-text {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 200px;
+	line-height: 244px;
+	color: #0C0F15;
+	-webkit-text-stroke: 0.2px rgba(255, 255, 255, 0.6);
+}
+
+.section-about__content {
+	width: 680px;
+}
+
+.section-about__content-text {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 28px;
+	line-height: 50px;
+	color: #FFFFFF;
+}
+
+.section-about__content-text:first-child {
+	margin-bottom: 20px;
+}
+
+.section-schema {
+	margin-bottom: 200px;
+}
+
+.section-schema__container {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.section-schema__title {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 15px;
+	color: #FFFFFF;
+	margin-bottom: 100px;
+}
+
+.section-schema__image{
+	width: 500px;
+}
+
+.section-palette__color {
+	position: relative;
+}
+
+.section-palette__color:after {
+	position: absolute;
+	content: attr(data-color)
 }
