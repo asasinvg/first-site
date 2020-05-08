@@ -7,6 +7,21 @@ body {
 	margin: 0 auto;
 }
 
+.title {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 15px;
+	color: #FFFFFF;
+}
+
+.column-center {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
 .section-main {
 	display: flex;
 	flex-flow: column;
@@ -66,24 +81,27 @@ body {
 	margin-bottom: 200px;
 }
 
-.section-schema__container {
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-}
-
 .section-schema__title {
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 15px;
-	color: #FFFFFF;
 	margin-bottom: 100px;
 }
 
 .section-schema__image{
 	width: 500px;
+}
+
+.section-palette {
+	margin-bottom: 200px;
+}
+
+.section-palette__title {
+	margin-bottom: 50px;
+}
+
+.section-palette__colors {
+	display: grid;
+	grid-template-columns: 1fr 1fr 170px;
+	grid-auto-rows: 500px 500px;
+	width: 100%;
 }
 
 .section-palette__color {
@@ -92,5 +110,36 @@ body {
 
 .section-palette__color:after {
 	position: absolute;
-	content: attr(data-color)
+	left: 50px;
+	bottom: 50px;
+	content: attr(data-color);
+}
+
+
+
+.section-content__block {
+	margin-bottom: 200px;
+}
+
+.section-content__block:last-child {
+	margin-bottom: 0;
+}
+
+.section-content__block-text {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 28px;
+	line-height: 50px;
+	color: #FFFFFF;
+	width: 600px;
+	margin-bottom: 200px;
+}
+
+.section-content__figure-caption {
+	margin-bottom: 50px;
+}
+
+.section-content__figure-image {
+	width: 1030px;
 }
