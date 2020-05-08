@@ -16,6 +16,15 @@ body {
 	color: #FFFFFF;
 }
 
+.text {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 28px;
+	line-height: 50px;
+	color: #FFFFFF;
+}
+
 .column-center {
 	display: flex;
 	flex-flow: column;
@@ -126,12 +135,6 @@ body {
 }
 
 .section-content__block-text {
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 28px;
-	line-height: 50px;
-	color: #FFFFFF;
 	width: 600px;
 	margin-bottom: 200px;
 }
@@ -142,4 +145,36 @@ body {
 
 .section-content__figure-image {
 	width: 1030px;
+}
+
+
+
+
+.section-others {
+	background: #151923;
+	clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.section-others__device-image {
+	position: absolute;
+	z-index: 50;
+}
+
+.info {
+	display: grid;
+	grid-template-columns: 425px 765px;
+	justify-content: space-between;
+}
+
+.info__content-text {
+	position: sticky;
+	top: 60px;
+}
+
+.info__image {
+	margin-bottom: 50px;
+}
+
+.info__image:last-child {
+	margin-bottom: 0;
 }
