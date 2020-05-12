@@ -31,6 +31,10 @@ body {
 	align-items: center;
 }
 
+
+
+
+
 .section-main {
 	display: flex;
 	flex-flow: column;
@@ -43,6 +47,10 @@ body {
 	width: 75vw;
 	max-width: 1200px;
 }
+
+
+
+
 
 .section-about {
 	margin-bottom: 170px;
@@ -86,6 +94,9 @@ body {
 	margin-bottom: 20px;
 }
 
+
+
+
 .section-schema {
 	margin-bottom: 200px;
 }
@@ -97,6 +108,9 @@ body {
 .section-schema__image{
 	width: 500px;
 }
+
+
+
 
 .section-palette {
 	margin-bottom: 200px;
@@ -126,6 +140,13 @@ body {
 
 
 
+
+
+
+.section-content {
+	margin-bottom: 200px;
+}
+
 .section-content__block {
 	margin-bottom: 200px;
 }
@@ -150,20 +171,33 @@ body {
 
 
 
-.section-others {
-	background: #151923;
-	clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
+.section-others__pad {
+	position: relative;
+	height: calc(1300px / 4);
 }
 
-.section-others__device-image {
+.section-others__pad-image {
 	position: absolute;
-	z-index: 50;
+	z-index: 100;
+	left: 25px;
+	right: 25px;
+	width: calc(100% - 50px);
 }
+
+
+.section-others__content {
+	background: #151923;
+	padding-top: 615px;
+	clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);	
+	padding-bottom: 145px;
+}
+
 
 .info {
 	display: grid;
 	grid-template-columns: 425px 765px;
 	justify-content: space-between;
+	margin-bottom: 65px;
 }
 
 .info__content-text {
@@ -177,4 +211,57 @@ body {
 
 .info__image:last-child {
 	margin-bottom: 0;
+}
+
+
+.sitemaps {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 60px;
+}
+
+.sitemaps__image {
+	width: 100%;
+	margin-bottom: 55px;
+}
+
+.sitemaps__image:last-child {
+	margin-bottom: 0;
+}
+
+
+
+
+
+
+.section-end__image {
+	height: 1380px;
+	background-image: url("../images/end-preview.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.section-end__content {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	padding: 215px 0 365px;
+}
+
+.section-end__content-title {
+	font-size: 28px;
+	line-height: 50px;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
+
+.section-end__content-link {
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 20px;
+	color: #FF3D13;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #FF3D13;
 }
